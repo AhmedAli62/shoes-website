@@ -1,0 +1,295 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+nav {
+    background-color: #333;
+    padding: 1em;
+    text-align: center;
+
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+
+nav li {
+
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #ccc;
+}
+
+nav a.active {
+    color: #66d9ef;
+}
+
+img {
+    position: absolute;
+    width: 13%;
+    height: 7%;
+    margin-left: 15px;
+    margin-bottom: 1100px;
+}
+
+div {
+    background-color: #ffffff;
+    width: 100vw;
+    height: 600px;
+}
+
+div img {
+    margin: 0;
+    width: 100%;
+    height: 80%;
+    backdrop-filter: blur(10px);
+}
+
+.remove {
+    z-index: 2;
+    height: 80%;
+    width: 100%;
+    animation: flip-2-ver-left-1 2s;
+}
+
+h2 {
+    margin-left: 180px;
+    z-index: 2;
+    color: #ffffff;
+    position: absolute;
+    margin-top: 100px;
+    font-size: 50px;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+    font-family: "Anton SC", sans-serif
+}
+
+.background {
+
+    border-radius: 10px;
+    margin-left: 12%;
+    height: 700px;
+    width: 950px;
+    margin-top: 4px;
+    animation: in 1s;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+    0% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+.h22 {
+    font-size: 50px;
+    margin-left: 180px;
+    z-index: 2;
+    color: #ffffff8c;
+    position: absolute;
+    margin-top: 180px;
+    font-family: "Quicksand", sans-serif;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+
+}
+
+.star {
+    z-index: 1;
+    height: 110px;
+    width: 110px;
+    margin-top: 200px;
+    margin-left: 190px;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+
+}
+
+p {
+    position: absolute;
+    color: #ffffff;
+    z-index: 1;
+    height: 110px;
+    width: 250px;
+    margin-top: 300px;
+    margin-left: 180px;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+
+}
+
+.shoess {
+    display: flex;
+    background-color: #333;
+    width: 100%;
+    height: 110vh;
+}
+
+/* shoes pic  */
+.img6 {
+    z-index: 1;
+    margin-left: 60%;
+    height: 400px;
+    width: 350px;
+    margin-top: 30%;
+    border-radius: 10px;
+    filter: drop-shadow(7px 7px 10px #000000);
+
+}
+
+.img5 {
+    height: 300px;
+    width: 300px;
+    margin-top: 15%;
+    margin-left: 15%;
+    border-radius: 10px;
+    filter: drop-shadow(7px 7px 10px #000000);
+}
+
+.img4 {
+    height: 300px;
+    width: 300px;
+    margin-top: 50%;
+    margin-left: 15%;
+    border-radius: 10px;
+    filter: drop-shadow(7px 7px 10px #000000);
+}
+
+/* 50%off */
+.off {
+    position: absolute;
+    margin-top: 30.5%;
+    background-color: rgba(0, 0, 0, 0.568);
+    height: 70px;
+    width: 70px;
+    border-radius: 55px;
+    margin-left: 770px;
+    z-index: 2;
+    text-align: center;
+
+
+}
+
+.off2 {
+    position: absolute;
+    z-index: 3;
+    margin-left: 16%;
+    height: 70px;
+    width: 70px;
+    text-align: center;
+    border-radius: 55px;
+    background-color: rgba(0, 0, 0, 0.582);
+    margin-top: 15.5%;
+
+}
+
+.off3 {
+    position: absolute;
+    z-index: 4;
+    margin-left: 16%;
+    height: 70px;
+    width: 70px;
+    text-align: center;
+    border-radius: 55px;
+    background-color: rgba(0, 0, 0, 0.582);
+    margin-top: 50.5%;
+}
+
+/* shoes name */
+h3 {
+    position: absolute;
+    margin-left: 16%;
+    margin-top: 70%;
+    z-index: 5;
+    width: 200px;
+    height: 200px;
+    color: #000000;
+}
+
+.h31 {
+    position: absolute;
+    margin-left: 16%;
+    margin-top: 35%;
+    color: #000000;
+
+}
+
+.h32 {
+    margin-left: 69%;
+    margin-top: 58%;
+    color: #000000;
+}
+
+.about {
+    margin-top: 15px;
+    position: absolute;
+    background-color: #333;
+    width: 100%;
+    height: 43.4%;
+}
+
+.inner {
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h5 {
+    color: #808080;
+    margin-top: 80px;
+    text-align: end;
+    margin-left: 55%;
+    font-size: 21px;
+    text-align: justify;
+}
+
+.essay {
+    color: #808080;
+    margin-left: 55%;
+    text-align: justify;
+}
+
+.women {
+    color: white;
+    margin-left: 57%;
+    margin-top: 0;
+    font-size: 25px;
+    margin-bottom: 50%;
+}
+
+.running {
+    height: 100%;
+    width: 50%;
+    border-radius: 10px;
+
+}
+
+/* card */
+.inner-div{
+    background-color: #66d9ef;
+}
+
+
+
