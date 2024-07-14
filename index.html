@@ -1,116 +1,464 @@
-<!DOCTYPE html>
-<html lang="en">
+body {
+margin: 0;
+padding: 0;
+background-color: #333;
+}
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-</head>
+nav {
+    background-color: #880e1d;
+    padding: 1em;
+    text-align: center;
 
-<body>
-  <!-- navbar -->
-  <img src="images-removebg-preview.png" alt="">
-  <nav>
-    <ul>
-      <li><a href="#">New & Featured</a></li>
-      <li><a href="#">Men</a></li>
-      <li><a href="#">Women</a></li>
-      <li><a href="#">Kids</a></li>
-      <li><a href="#">Jordan</a></li>
-    </ul>
-  </nav>
-  <!-- navbar end -->
+}
 
-  <!-- display pics and text -->
-  <div>
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
 
-    <h2>Jordan Stay Loyal 3 </h2>
-    <h2 class="h22"> Men's Shoes</h2>
-    <img class="img2" src="background image.png" alt="">
-    <img class="star"
-      src="https://png.pngtree.com/png-vector/20220721/ourmid/pngtree-four-star-rating-sign-png-image_6026608.png"
-      alt="">
-    <p>You gotta know where you've been to know where you're going. We took that to heart when creating the Stay
-      Loyal 3, a modern shoe built on the Air Jordan legacy. Inside and out, they're made for versatility, with
-      minimalist looks, cloud-like cushioning and design elements that echo the AJ4. In other words, style with
-      proven lasting power.</p>
-    <img class="background"
-      src="Runway 2024-07-11T15_03_52.599Z Erase and Replace make nike shoe jordan Jordan Stay Loyal 3  in black and green color.png"
-      alt="">
+nav li {
 
-  </div>
+    margin-right: 20px;
+}
 
-  <!-- display pic and text end here -->
+nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
 
-  <!-- shoes pic -->
+nav a:hover {
+    color: #ccc;
+}
 
+nav a.active {
+    color: #66d9ef;
+}
 
+img {
+    position: absolute;
+    width: 13%;
+    height: 7%;
+    margin-left: 15px;
+    margin-bottom: 1100px;
+}
 
-  <div class="shoess">
-    <div class="off3">
-      <h4 data-aos="zoom-in"> 50%<br> Off </h4>
-    </div>
-    <h3 data-aos="zoom-in">Air Jordan 1 Mid</h3>
-    <img data-aos="zoom-in" class="img4"
-      src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/d54d997f-2ae0-44be-98f7-c179b60020a9/air-jordan-1-mid-mens-shoes-X5pM09.png"
-      alt="">
-    <div class="off2">
-      <h4 data-aos="zoom-in"> 50%<br> Off </h4>
-    </div>
-    <h3 data-aos="zoom-in" class="h31">Air Jordan 1 Zoom CMFT 2</h3>
-    <img data-aos="zoom-in" class="img5"
-      src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/037c28bc-ccaa-40ff-9e03-03701324155c/air-jordan-1-zoom-cmft-2-mens-shoes-Tw02qw.png"
-      alt="">
+div {
+    background-color: #ffffff;
+    width: 100vw;
+    height: 600px;
+}
 
-    <div class="off">
-      <h4 data-aos="zoom-in"> 50%<br> Off </h4>
-    </div>
-    <h3 data-aos="zoom-in" class="h32">Air Jordan 1 Mid</h3>
-    <img data-aos="zoom-in" class="img6"
-      src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/20555278-bf89-4ebe-997b-15808e0fff97/air-jordan-1-mid-womens-shoes-FfLktz.png"
-      alt="">
+div img {
+    margin: 0;
+    width: 100%;
+    height: 80%;
+}
 
+.remove {
+    z-index: 2;
+    height: 80%;
+    width: 100%;
+    animation: flip-2-ver-left-1 2s;
+}
 
-  </div>
+h2 {
+    margin-left: 180px;
+    z-index: 2;
+    color: #ffffff;
+    position: absolute;
+    margin-top: 100px;
+    font-size: 50px;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+    font-family: "Anton SC", sans-serif
+}
 
-  <!-- shoes pic end here -->
+.background {
 
-  <!-- photo essay -->
-  <div class="about">
+    border-radius: 10px;
+    margin-left: 12%;
+    height: 700px;
+    width: 950px;
+    margin-top: 4px;
+    animation: in 1s;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
 
-    <img data-aos="fade-in" duration="5s" class="running"
-      src="https://res.cloudinary.com/dmubfrefi/image/private/s--7WqGeUJO--/c_crop,h_1805,w_3200,x_0,y_454/c_scale,w_828/f_auto/q_auto/v1/dee-about-cms-prod-medias/b1949ea7-5874-478b-baf3-4ea3b3d408c4/athletes-on-air-12.jpg?_a=BAACwmBs"
-      alt="">
+@keyframes myAnim {
+    0% {
+        transform: scale(0.5);
+    }
 
-    <h5 class="essay">Photo Essay
-    </h5>
-
-    <h3 class="women">Women Who Win on Nike Air</h3> <br>
-    <h5>
-      The competitive advantage for athletes like Beatriz <br> Hatz, Sifan Hassan, and Sha’Carri Richardson? <br>
-      Shoes, boots and spikes with our proprietary <br> cushioning technology.</h5>
-  </div>
-  <!-- photo essay end here -->
+    100% {
+        transform: scale(1);
+    }
+}
 
 
-  <!-- card -->
-  <div class="outer-div">
-    <div class="inner-div">
-      <!-- content inside the inner div -->
-    </div>
-  </div>
 
-</body>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+.h22 {
+    font-size: 50px;
+    margin-left: 180px;
+    z-index: 2;
+    color: #ffffff8c;
+    position: absolute;
+    margin-top: 180px;
+    font-family: "Quicksand", sans-serif;
+    animation: myAnim 2s ease 0s 1 normal forwards;
 
-</html>
+}
+
+.star {
+    z-index: 1;
+    height: 110px;
+    width: 110px;
+    margin-top: 200px;
+    margin-left: 190px;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+
+}
+
+p {
+    position: absolute;
+    color: #ffffff;
+    z-index: 1;
+    height: 110px;
+    width: 250px;
+    margin-top: 300px;
+    margin-left: 180px;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+
+}
+
+.shoess {
+    display: flex;
+    background-color: #333333;
+    width: 100%;
+    height: 110vh;
+    margin: 0;
+    padding:0 ;
+}
+
+/* shoes pic  */
+.img6 {
+    z-index: 1;
+    margin-left: 60%;
+    height: 400px;
+    width: 350px;
+    margin-top: 30%;
+    border-radius: 10px;
+    filter: drop-shadow(7px 7px 10px #000000);
+
+}
+
+.img5 {
+    height: 300px;
+    width: 300px;
+    margin-top: 15%;
+    margin-left: 15%;
+    border-radius: 10px;
+    filter: drop-shadow(7px 7px 10px #000000);
+}
+
+.img4 {
+    height: 300px;
+    width: 300px;
+    margin-top: 50%;
+    margin-left: 15%;
+    border-radius: 10px;
+    filter: drop-shadow(7px 7px 10px #000000);
+}
+
+/* 50%off */
+.off {
+    position: absolute;
+    margin-top: 30.5%;
+    background-color: rgba(0, 0, 0, 0.568);
+    height: 70px;
+    width: 70px;
+    border-radius: 55px;
+    margin-left: 770px;
+    z-index: 2;
+    text-align: center;
+
+
+}
+
+.off2 {
+    position: absolute;
+    z-index: 3;
+    margin-left: 16%;
+    height: 70px;
+    width: 70px;
+    text-align: center;
+    border-radius: 55px;
+    background-color: rgba(0, 0, 0, 0.582);
+    margin-top: 15.5%;
+
+}
+
+.off3 {
+    position: absolute;
+    z-index: 4;
+    margin-left: 16%;
+    height: 70px;
+    width: 70px;
+    text-align: center;
+    border-radius: 55px;
+    background-color: rgba(0, 0, 0, 0.582);
+    margin-top: 50.5%;
+}
+
+/* shoes name */
+h3 {
+    position: absolute;
+    margin-left: 16%;
+    margin-top: 70%;
+    z-index: 5;
+    width: 200px;
+    height: 200px;
+    color: #000000;
+}
+
+.h31 {
+    position: absolute;
+    margin-left: 16%;
+    margin-top: 35%;
+    color: #000000;
+
+}
+
+.h32 {
+    margin-left: 69%;
+    margin-top: 58%;
+    color: #000000;
+}
+
+.essay div{
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.forward{
+    height: 350px;
+    width: 600px;
+    border-radius: 7px;
+
+}
+
+
+h5 {
+    color: #808080;
+    margin-top: 120px;
+    text-align: end;
+    margin-left: 60%;
+    font-size: 21px;
+    text-align: justify;
+}
+
+.essay {
+    color: #808080;
+    margin-left: 55%;
+    text-align: justify;
+}
+
+.women {
+    color: rgb(255, 255, 255);
+    margin-left: 57%;
+    margin-top: 0;
+    font-size: 25px;
+    margin-bottom: 50%;
+}
+
+.running {
+    height: 100%;
+    width: 50%;
+    border-radius: 10px;
+
+}
+
+
+
+/* countainer */
+/* countainer */
+.row{
+    background-color: #ffffff;
+   margin-left: 30%;
+   border-radius: 10px;
+    height: 500px;
+    width: 500px;
+margin-bottom: 200px;
+
+}
+
+
+
+
+.countainer{
+border-radius: 10px;
+    width: 1000px;
+    height: 1000px;
+    background: #002630;
+margin-left: 17%;
+  
+}
+
+.countainer img{
+    height: 150px;
+    width: 150px;
+margin-left: 20%;
+}
+
+.row .countainer {
+    position: relative; 
+    width: 320px;
+    height: 450px;
+    background: #333;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.row .countainer:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1BBFE9;
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+
+.row .countainer:hover:before {
+    clip-path: circle(300px at 80% -20%);
+}
+
+.row .countainer:after {
+    content: "Nike";
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 12em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.04);
+
+}
+
+/* img */
+.row .countainer img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(360deg);
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+}
+
+.row .countainer:hover img {
+    top: 0%;
+    transform: translateY(-1%) rotate(20deg);
+}
+
+.h2card{
+    position: absolute;
+    top: 45%;
+    transform: translateY(-5%) rotate(360deg);
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    margin-left: 30%;
+    font-size: 35px;
+    transition: .5s;
+}
+
+.row .countainer .h2card:hover{
+    top: 15%;
+}
+
+
+
+
+
+
+
+
+
+.size {
+
+    display: flex;
+        width: 60px;
+        height: 26px;
+        text-align: center;
+        line-height: 26px;
+        font-size: 14px;
+        color: #111;
+        background: #ffffff;
+        border-radius: 4px;
+        margin-top: 105%;
+        margin-left: 40%;
+        letter-spacing: 5px;
+        cursor: pointer;
+    
+}
+
+.cardh3 {
+    margin-top: 105%;
+    margin-left: 20%;
+    color: #fff;
+transition: all 0.5s ease-in-out;
+}
+
+
+
+
+
+
+.row .countainer .contentBx{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 10;
+    background-color: transparent;
+  }
+  
+  .row .countainer:hover .contentBx{
+    height: 210px;
+  }
+  
+  .row .countainer .contentBx h2{
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #ffffff;
+    margin: 0;
+    background-color: transparent;
+  }
+
+
+/* color */
+
+
+
+
+
+
+/* .contextBx */
+
+
+
+  
+
+  
