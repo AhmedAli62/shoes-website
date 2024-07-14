@@ -1,14 +1,11 @@
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #333;
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
+margin: 0;
+padding: 0;
+background-color: #333;
 }
 
 nav {
-    background-color: #333;
+    background-color: #880e1d;
     padding: 1em;
     text-align: center;
 
@@ -61,7 +58,6 @@ div img {
     margin: 0;
     width: 100%;
     height: 80%;
-    backdrop-filter: blur(10px);
 }
 
 .remove {
@@ -141,9 +137,11 @@ p {
 
 .shoess {
     display: flex;
-    background-color: #333;
+    background-color: #333333;
     width: 100%;
     height: 110vh;
+    margin: 0;
+    padding:0 ;
 }
 
 /* shoes pic  */
@@ -241,26 +239,26 @@ h3 {
     color: #000000;
 }
 
-.about {
-    margin-top: 15px;
+.essay div{
     position: absolute;
-    background-color: #333;
-    width: 100%;
-    height: 43.4%;
+    align-items: center;
+    justify-content: center;
+
 }
 
-.inner {
-    width: 50%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
+.forward{
+    height: 350px;
+    width: 600px;
+    border-radius: 7px;
+
 }
+
 
 h5 {
     color: #808080;
-    margin-top: 80px;
+    margin-top: 120px;
     text-align: end;
-    margin-left: 55%;
+    margin-left: 60%;
     font-size: 21px;
     text-align: justify;
 }
@@ -272,7 +270,7 @@ h5 {
 }
 
 .women {
-    color: white;
+    color: rgb(255, 255, 255);
     margin-left: 57%;
     margin-top: 0;
     font-size: 25px;
@@ -286,10 +284,181 @@ h5 {
 
 }
 
-/* card */
-.inner-div{
-    background-color: #66d9ef;
+
+
+/* countainer */
+/* countainer */
+.row{
+    background-color: #ffffff;
+   margin-left: 30%;
+   border-radius: 10px;
+    height: 500px;
+    width: 500px;
+margin-bottom: 200px;
+
 }
 
 
 
+
+.countainer{
+border-radius: 10px;
+    width: 1000px;
+    height: 1000px;
+    background: #002630;
+margin-left: 17%;
+  
+}
+
+.countainer img{
+    height: 150px;
+    width: 150px;
+margin-left: 20%;
+}
+
+.row .countainer {
+    position: relative; 
+    width: 320px;
+    height: 450px;
+    background: #333;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.row .countainer:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1BBFE9;
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+
+.row .countainer:hover:before {
+    clip-path: circle(300px at 80% -20%);
+}
+
+.row .countainer:after {
+    content: "Nike";
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 12em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.04);
+
+}
+
+/* img */
+.row .countainer img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(360deg);
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+}
+
+.row .countainer:hover img {
+    top: 0%;
+    transform: translateY(-1%) rotate(20deg);
+}
+
+.h2card{
+    position: absolute;
+    top: 45%;
+    transform: translateY(-5%) rotate(360deg);
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    margin-left: 30%;
+    font-size: 35px;
+    transition: .5s;
+}
+
+.row .countainer .h2card:hover{
+    top: 15%;
+}
+
+
+
+
+
+
+
+
+
+.size {
+
+    display: flex;
+        width: 60px;
+        height: 26px;
+        text-align: center;
+        line-height: 26px;
+        font-size: 14px;
+        color: #111;
+        background: #ffffff;
+        border-radius: 4px;
+        margin-top: 105%;
+        margin-left: 40%;
+        letter-spacing: 5px;
+        cursor: pointer;
+    
+}
+
+.cardh3 {
+    margin-top: 105%;
+    margin-left: 20%;
+    color: #fff;
+transition: all 0.5s ease-in-out;
+}
+
+
+
+
+
+
+.row .countainer .contentBx{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 10;
+    background-color: transparent;
+  }
+  
+  .row .countainer:hover .contentBx{
+    height: 210px;
+  }
+  
+  .row .countainer .contentBx h2{
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #ffffff;
+    margin: 0;
+    background-color: transparent;
+  }
+
+
+/* color */
+
+
+
+
+
+
+/* .contextBx */
+
+
+
+  
+
+  
